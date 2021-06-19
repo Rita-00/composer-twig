@@ -1,0 +1,11 @@
+{% extends "index.twig" %}
+{% block title %}Меню пиццерии{% endblock %}
+{% block menu %}
+    <div id="menu">
+        {% for menu in menus %}
+            <div class="menu">
+                "<em>{{menu.title}}"</em>.<strong>{{menu.price}}</strong>.
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
