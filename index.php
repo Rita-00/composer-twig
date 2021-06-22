@@ -1,7 +1,7 @@
 <?php
 require_once 'vendor\autoload.php';
 
-Twig_Autholoader::register();
+Twig_Autoloader::register();
 
 $loader = new Twig_Loader_Filesistem('templates');
 $twig=new Twig_Environment($loader);
